@@ -687,8 +687,8 @@ public class StartGame implements Handler
             g.put("gamekey", gameKey);
             g.put("stage", stage);
 
-            //JSONObject updatedInfo = new JSONObject();
-           //updatedInfo.put("life", life);
+            JSONObject updatedInfo = new JSONObject();
+            updatedInfo.put("life", life);
             updatedInfo.put("charge_dt", lifeCharge);
             updatedInfo.put("survival_life", survivalLife);
             updatedInfo.put("survival_charge_dt", user.get("survival_charge_dt"));
@@ -719,8 +719,8 @@ public class StartGame implements Handler
 //              gameObj.put("fusn", fusn);
 //              MarbleWorks.sendGameStartLog(request, user.get("kk_id").toString(), user, gameObj);
         
-        //Misc.removeServerMission(result);
+        Misc.removeServerMission(result);
         
-        //return Result.success(result);
+        return Result.success(result);
     }
 }
