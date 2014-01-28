@@ -719,7 +719,7 @@ public class StartGame implements Handler
 //              gameObj.put("fusn", fusn);
 //              MarbleWorks.sendGameStartLog(request, user.get("kk_id").toString(), user, gameObj);
         
-        Misc.removeServerMission(result);
+        //Misc.removeServerMission(result);
         
         return Result.success(result);
     }
