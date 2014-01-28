@@ -721,6 +721,6 @@ public class StartGame implements Handler
         
         //Misc.removeServerMission(result);
         
-        return Result.success(result);
+        //return Result.success(result);
     }
 }
